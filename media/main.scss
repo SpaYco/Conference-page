@@ -28,13 +28,58 @@ header {
     }
     a {
         color: $grayColor;
-        text-decoration: none;
+        text-decoration: underline;
+        text-decoration-color: transparent;
         font-family: $secondaryFont;
+        transition: ease-in-out 0.5s;
         &:hover {
-            text-decoration: underline;
             text-decoration-color: $grayColor;
         }
     }
 }
+nav {
+    background-color: white;
+    padding: 0 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+        font-size: 25px;
+        padding: 0 25px;
+    }
+    img {
+        max-height: 90px;
+    }
+    .nav-links {
+        .nav-about {
+            color: $blackColor;
+            font-family: $secondaryFont;
+            text-decoration: underline;
+            text-decoration-color: transparent;
+            font-weight: 400;
+            text-shadow: 0px 0px 15px transparent;
+            transition: ease-in-out 450ms;
+            &:hover {
+                text-decoration-color: $blackColor;
+            }
+        }
+        .nav-tickets {
+            border: 5px solid $redColor;
+            border-radius: 15px;
+            background-color: transparent;
+            color: $redColor;
+            font-family: $primaryFont;
+            text-decoration: none;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            transition: ease-in-out  0.5s;
+            &:hover {
+                color: white;
+                background-color: $redColor;
+            }
+        }
+    }
+}
+
 
 
