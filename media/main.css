@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@font-face {
+  font-family: "COCOGOOSE";
+  src: url("//db.onlinewebfonts.com/t/d14035f6b1afeabafbee4abb2ebf0fc6.eot");
+  src: url("//db.onlinewebfonts.com/t/d14035f6b1afeabafbee4abb2ebf0fc6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d14035f6b1afeabafbee4abb2ebf0fc6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d14035f6b1afeabafbee4abb2ebf0fc6.woff") format("woff"), url("//db.onlinewebfonts.com/t/d14035f6b1afeabafbee4abb2ebf0fc6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d14035f6b1afeabafbee4abb2ebf0fc6.svg#COCOGOOSE") format("svg");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #D3D3D3;
+}
+
+header {
+  background: #272A31;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 55px;
+}
+
+header > * {
+  padding: 0 10px;
+}
+
+header i {
+  color: #D3D3D3;
+}
+
+header a {
+  color: #D3D3D3;
+  text-decoration: none;
+  font-family: "Lato", san-serif;
+}
+
+header a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #D3D3D3;
+          text-decoration-color: #D3D3D3;
+}
+
+nav {
+  background-color: white;
+  padding: 10px 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav a {
+  font-size: 25px;
+  padding: 0 25px;
+}
+
+nav img {
+  max-height: 70px;
+}
+
+nav .nav-about {
+  color: #272A31;
+  font-family: "Lato", san-serif;
+  text-decoration: none;
+  font-weight: 400;
+  text-shadow: 0px 0px 15px transparent;
+  -webkit-transition: 450ms;
+  transition: 450ms;
+}
+
+nav .nav-about:hover {
+  text-shadow: 0px 0px 10px #272A31;
+}
+
+nav .nav-tickets {
+  border: 5px solid #EC5242;
+  border-radius: 15px;
+  background-color: transparent;
+  color: #EC5242;
+  font-family: "COCOGOOSE", san-serif;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav .nav-tickets:hover {
+  color: white;
+  background-color: #EC5242;
+}
+/*# sourceMappingURL=main.css.map */

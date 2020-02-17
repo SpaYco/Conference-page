@@ -1,0 +1,40 @@
+@import "./fonts";
+$blackColor: #272A31;
+$grayColor: #D3D3D3;
+$redColor: #EC5242;
+$primaryFont: "COCOGOOSE", san-serif;
+$secondaryFont: "Lato", san-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: $grayColor ;
+}
+
+header {
+    background: $blackColor;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 55px;
+    > * {
+        padding: 0 10px;
+    }
+    i {
+        color: $grayColor;
+    }
+    a {
+        color: $grayColor;
+        text-decoration: none;
+        font-family: $secondaryFont;
+        &:hover {
+            text-decoration: underline;
+            text-decoration-color: $grayColor;
+        }
+    }
+}
+
+
