@@ -1,0 +1,353 @@
+body #first-step {
+  padding: 150px 10vw;
+  text-align: center;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #first-step .title h3 {
+  font-family: "Lato", san-serif;
+}
+
+body .step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
+  font-family: "Lato", san-serif;
+  border: 1px solid #272A31;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+body .step .orange-text {
+  padding-right: 5px;
+  color: #EC5242;
+  text-transform: uppercase;
+}
+
+body .step .orange-text::before {
+  content: '\2022';
+  color: #EC5242;
+  padding-right: 5px;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+body main #ticket-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60vw;
+  margin-bottom: 75px;
+  background-color: white;
+  border: 1px solid;
+  border-image-slice: 30;
+  border-image-width: 25px;
+  border-image-outset: 17px;
+  border-image-repeat: repeat;
+  border-image-source: url("./border-image.png");
+}
+
+body main #ticket-container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+body main #ticket-container .row * {
+  border-right: 0.5px solid rgba(128, 128, 128, 0.685);
+  border-bottom: 0.5px solid rgba(128, 128, 128, 0.685);
+  text-align: center;
+  font-family: "Lato", san-serif;
+  padding: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main #ticket-container .row .first-col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body main #ticket-container .row .second-col {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+body main #ticket-container .row .third-col {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+body main #ticket-container .row .fourth-col {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+body main #ticket-container .row .fifth-col {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  border-right: none;
+}
+
+body main #ticket-container .row .double-col {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+}
+
+body main #ticket-container .row:first-child {
+  background-color: #D3D3D3;
+}
+
+body main #ticket-container .row:not(:first-child) {
+  background-color: white;
+}
+
+body main #ticket-container .row:last-child {
+  border-bottom: none;
+}
+
+body main #ticket-container .row .price {
+  color: #EC5242;
+}
+
+body main .box {
+  background-color: #EC5242;
+  color: white;
+  height: 50px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: -25px;
+  -webkit-transition: 550ms;
+  transition: 550ms;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+body main .box i {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: 550ms;
+  transition: 550ms;
+  font-size: 25px;
+}
+
+body main .box:hover {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+body main .box:hover i {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+body main #menu-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 75px;
+  background-color: white;
+}
+
+body main #menu-section #menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 55px;
+}
+
+body main #menu-section #menu .menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80vw;
+  margin-top: 15px;
+}
+
+body main #menu-section #menu .menu-container > p {
+  font-family: "Lato", san-serif;
+  font-size: 20px;
+  border: 0.5px solid rgba(128, 128, 128, 0.685);
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  background-color: #D3D3D3;
+}
+
+body main #menu-section #menu .menu-container div {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: "Lato", san-serif;
+}
+
+body main #menu-section #menu .menu-container div label {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-right: 0.5px solid rgba(128, 128, 128, 0.685);
+  border-bottom: 0.5px solid rgba(128, 128, 128, 0.685);
+}
+
+body main #menu-section #menu .menu-container div label * {
+  padding: 15px;
+}
+
+body main #menu-section #menu .menu-container div label:first-child {
+  border-left: 0.5px solid rgba(128, 128, 128, 0.685);
+}
+
+body main button {
+  margin: 25px;
+  background-color: #EC5242;
+  color: white;
+  font-family: "COCOGOOSE", san-serif;
+  font-size: 20px;
+  padding: 5px 15px;
+  border: 1px solid #272A31;
+  -webkit-box-shadow: 0px 0px 5px 1px gray;
+          box-shadow: 0px 0px 5px 1px gray;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body main button:hover {
+  background-color: white;
+  color: #EC5242;
+  border: 1px solid #EC5242;
+  -webkit-box-shadow: 0px 0px 10px 3px gray;
+          box-shadow: 0px 0px 10px 3px gray;
+}
+
+body footer {
+  background-color: #272A31;
+  color: white;
+}
+/*# sourceMappingURL=tickets.css.map */

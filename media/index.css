@@ -15,30 +15,30 @@ main {
   width: 100%;
 }
 
-main .description {
+main #description {
   padding: 250px 10vw;
   text-align: center;
   width: 100%;
 }
 
-main .description h3 {
+main #description h3 {
   font-family: "COCOGOOSE", san-serif;
   font-weight: 100;
   color: #272A31;
   font-size: 25px;
 }
 
-main .description p {
+main #description p {
   font-family: "Lato", san-serif;
   font-size: 21px;
   padding: 15px 0;
 }
 
-main .description p .SpaYco {
+main #description p .SpaYco {
   color: #EC5242;
 }
 
-main .events {
+main #events {
   padding: 150px 10vw;
   width: 100%;
   background: #272A31;
@@ -57,11 +57,11 @@ main .events {
           align-items: center;
 }
 
-main .events .title {
+main #events .title {
   color: white;
 }
 
-main .events .cards-container {
+main #events .cards-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,7 +77,7 @@ main .events .cards-container {
           align-items: center;
 }
 
-main .events .cards-container .event-cards {
+main #events .cards-container .event-cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,7 +94,7 @@ main .events .cards-container .event-cards {
   cursor: pointer;
 }
 
-main .events .cards-container .event-cards img {
+main #events .cards-container .event-cards img {
   bottom: 0;
   top: 0;
   right: 0;
@@ -111,7 +111,7 @@ main .events .cards-container .event-cards img {
      object-fit: cover;
 }
 
-main .events .cards-container .event-cards h3 {
+main #events .cards-container .event-cards h3 {
   color: white;
   font-family: "COCOGOOSE", san-serif;
   z-index: 2;
@@ -121,7 +121,7 @@ main .events .cards-container .event-cards h3 {
   transition: 250ms;
 }
 
-main .events .cards-container .event-cards .orange, main .events .cards-container .event-cards .purple, main .events .cards-container .event-cards .blue {
+main #events .cards-container .event-cards .orange, main #events .cards-container .event-cards .purple, main #events .cards-container .event-cards .blue {
   position: absolute;
   z-index: 2;
   opacity: 0;
@@ -131,35 +131,35 @@ main .events .cards-container .event-cards .orange, main .events .cards-containe
   transition: 250ms;
 }
 
-main .events .cards-container .event-cards .orange {
+main #events .cards-container .event-cards .orange {
   background: -webkit-gradient(linear, left bottom, left top, from(orangered), color-stop(31%, rgba(255, 69, 0, 0.720326)), to(rgba(255, 68, 0, 0)));
   background: linear-gradient(0deg, orangered 0%, rgba(255, 69, 0, 0.720326) 31%, rgba(255, 68, 0, 0) 100%);
 }
 
-main .events .cards-container .event-cards .purple {
+main #events .cards-container .event-cards .purple {
   background: -webkit-gradient(linear, left bottom, left top, from(#ff00ec), color-stop(31%, rgba(196, 0, 255, 0.720326)), to(rgba(119, 0, 255, 0)));
   background: linear-gradient(0deg, #ff00ec 0%, rgba(196, 0, 255, 0.720326) 31%, rgba(119, 0, 255, 0) 100%);
 }
 
-main .events .cards-container .event-cards .blue {
+main #events .cards-container .event-cards .blue {
   background: -webkit-gradient(linear, left bottom, left top, from(#0026ff), color-stop(31%, rgba(0, 38, 255, 0.72)), to(rgba(119, 0, 255, 0)));
   background: linear-gradient(0deg, #0026ff 0%, rgba(0, 38, 255, 0.72) 31%, rgba(119, 0, 255, 0) 100%);
 }
 
-main .events .cards-container .event-cards:hover .orange, main .events .cards-container .event-cards:hover .purple, main .events .cards-container .event-cards:hover .blue {
+main #events .cards-container .event-cards:hover .orange, main #events .cards-container .event-cards:hover .purple, main #events .cards-container .event-cards:hover .blue {
   opacity: 1;
 }
 
-main .events .cards-container .event-cards:hover h3 {
+main #events .cards-container .event-cards:hover h3 {
   margin-bottom: 25px;
 }
 
-main .events .cards-container .event-cards:hover img {
+main #events .cards-container .event-cards:hover img {
   -webkit-filter: blur(2px);
           filter: blur(2px);
 }
 
-main .people {
+main #people {
   padding: 150px 10vw;
   width: 100%;
   background: #D3D3D3;
@@ -178,11 +178,11 @@ main .people {
           align-items: center;
 }
 
-main .people .title {
+main #people .title {
   color: #272A31;
 }
 
-main .people .people-cards-container {
+main #people .people-cards-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -196,12 +196,12 @@ main .people .people-cards-container {
           align-items: center;
 }
 
-main .people .people-cards-container * {
+main #people .people-cards-container * {
   -webkit-transition: 350ms;
   transition: 350ms;
 }
 
-main .people .people-cards-container .people-cards {
+main #people .people-cards-container .people-cards {
   margin: 2.5%;
   max-width: 20%;
   height: 25vw;
@@ -217,7 +217,7 @@ main .people .people-cards-container .people-cards {
           flex-direction: column;
 }
 
-main .people .people-cards-container .people-cards img {
+main #people .people-cards-container .people-cards img {
   width: 100%;
   height: 70%;
   border: 2px solid #272A31;
@@ -228,7 +228,7 @@ main .people .people-cards-container .people-cards img {
      object-position: 50% 0;
 }
 
-main .people .people-cards-container .people-cards a {
+main #people .people-cards-container .people-cards a {
   display: block;
   color: #272A31;
   font-family: "COCOGOOSE", san-serif;
@@ -241,16 +241,16 @@ main .people .people-cards-container .people-cards a {
   padding: 5px 0;
 }
 
-main .people .people-cards-container .people-cards:hover img {
+main #people .people-cards-container .people-cards:hover img {
   border-color: #EC5242;
 }
 
-main .people .people-cards-container .people-cards:hover a {
+main #people .people-cards-container .people-cards:hover a {
   border-color: #EC5242;
   color: white;
 }
 
-main .credits {
+main #credits {
   padding: 75px 10vw;
   width: 100%;
   display: -webkit-box;
@@ -269,11 +269,11 @@ main .credits {
   background: #272A31;
 }
 
-main .credits .title {
+main #credits .title {
   color: white;
 }
 
-main .credits .credit-pics {
+main #credits .credit-pics {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -285,7 +285,7 @@ main .credits .credit-pics {
           align-items: center;
 }
 
-main .credits .credit-pics img {
+main #credits .credit-pics img {
   max-width: 25%;
   max-height: 150px;
   -webkit-box-flex: 25%;

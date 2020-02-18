@@ -77,7 +77,7 @@ body main .about-container .about-text {
   font-size: 20px;
 }
 
-body main .logo-about {
+body main #logo-about {
   padding: 150px 10vw;
   text-align: center;
   width: 100%;
@@ -95,21 +95,21 @@ body main .logo-about {
       -ms-flex-align: center;
           align-items: center;
   background-color: white;
-  border-bottom: 1px solid #D3D3D3;
+  border-bottom: 2px solid #D3D3D3;
 }
 
-body main .logo-about h3 {
+body main #logo-about h3 {
   font-family: "Lato", san-serif;
   font-size: 2vw;
   font-weight: 800;
 }
 
-body main .logo-about p {
+body main #logo-about p {
   font-family: "Lato", san-serif;
   margin-bottom: 25px;
 }
 
-body main .logo-about img {
+body main #logo-about img {
   width: 30vw;
 }
 
@@ -131,7 +131,6 @@ body main #past-cons {
       -ms-flex-align: center;
           align-items: center;
   background-color: white;
-  border-bottom: 1px solid #D3D3D3;
 }
 
 body main #past-cons h3 {

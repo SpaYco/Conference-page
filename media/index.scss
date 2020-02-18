@@ -6,7 +6,7 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%;
-    .description {
+    #description {
         padding: 250px 10vw;
         text-align: center;
         width: 100%;
@@ -25,7 +25,7 @@ main {
             }
         }
     }
-    .events {
+    #events {
         padding: 150px 10vw;
         width: 100%;
         background: $blackColor;
@@ -103,7 +103,7 @@ main {
             }
         }
     }
-    .people {
+    #people {
         padding: 150px 10vw;
         width: 100%;
         background: $grayColor;
@@ -161,7 +161,7 @@ main {
             }
         }
     }
-    .credits {
+    #credits {
         padding: 75px 10vw;
         width: 100%;
         display: flex;

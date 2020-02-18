@@ -1,0 +1,242 @@
+@import "./variables";
+
+body {
+    #first-step {
+        padding: 150px 10vw;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .title {
+            h3 {
+                font-family: $secondaryFont;
+            }
+        }
+    }
+
+    .step {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-family: $secondaryFont;
+        border: 1px solid $blackColor;
+        padding: 10px 20px;
+        border-radius: 20px;
+
+        .orange-text {
+            padding-right: 5px;
+            color: $redColor;
+            text-transform: uppercase;
+
+            &::before {
+                content: '\2022';
+                color: $redColor;
+                padding-right: 5px;
+            }
+        }
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        ;
+
+        #ticket-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 60vw;
+            margin-bottom: 75px;
+            background-color: white;
+            border: 1px solid;
+            border-image-slice: 30;
+            border-image-width: 25px;
+            border-image-outset: 17px;
+            border-image-repeat: repeat;
+            border-image-source: url('./border-image.png');
+
+            .row {
+                display: flex;
+                width: 100%;
+
+                * {
+                    border-right: 0.5px solid rgba(128, 128, 128, 0.685);
+                    border-bottom: 0.5px solid rgba(128, 128, 128, 0.685);
+                    text-align: center;
+                    font-family: $secondaryFont;
+                    padding: 15px 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .first-col {
+                    flex: 1;
+                }
+
+                .second-col {
+                    flex: 2;
+                }
+
+                .third-col {
+                    flex: 2;
+                }
+
+                .fourth-col {
+                    flex: 2;
+                }
+
+                .fifth-col {
+                    flex: 3;
+                    border-right: none;
+                }
+
+                .double-col {
+                    flex: 4;
+                }
+
+                &:first-child {
+                    background-color: $grayColor;
+                }
+
+                &:not(:first-child) {
+                    background-color: white;
+                }
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                .price {
+                    color: $redColor;
+                }
+            }
+        }
+
+        .box {
+            background-color: $redColor;
+            color: white;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: -25px;
+            transition: 550ms;
+            transform: rotate(45deg);
+
+            i {
+                transform: rotate(-45deg);
+                transition: 550ms;
+                font-size: 25px;
+            }
+
+            &:hover {
+                transform: rotate(90deg);
+
+                i {
+                    transform: rotate(-90deg);
+                }
+            }
+        }
+
+        #menu-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 75px;
+            background-color: white;
+
+            #menu {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 55px;
+
+                .menu-container {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 80vw;
+                    margin-top: 15px;
+
+                    >p {
+                        font-family: $secondaryFont;
+                        font-size: 20px;
+                        border: 0.5px solid rgba(128, 128, 128, 0.685);
+                        display: block;
+                        text-align: center;
+                        width: 100%;
+                        padding: 10px;
+                        background-color: $grayColor;
+                    }
+
+                    div {
+                        flex: 2;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        user-select: none;
+                        font-family: $secondaryFont;
+
+                        label {
+                            flex: 1;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-right: 0.5px solid rgba(128, 128, 128, 0.685);
+                            border-bottom: 0.5px solid rgba(128, 128, 128, 0.685);
+
+                            * {
+                                padding: 15px;
+                            }
+
+                            &:first-child {
+                                border-left: 0.5px solid rgba(128, 128, 128, 0.685);
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+        button {
+            margin: 25px;
+            background-color: $redColor;
+            color: white;
+            font-family: $primaryFont;
+            font-size: 20px;
+            padding: 5px 15px;
+            border: 1px solid $blackColor;
+            box-shadow: 0px 0px 5px 1px gray;
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover {
+                background-color: white;
+                color: $redColor;
+                border: 1px solid $redColor;
+                box-shadow: 0px 0px 10px 3px gray;
+            }
+        }
+
+    }
+
+    footer {
+        background-color: $blackColor;
+        color: white;
+    }
+}
