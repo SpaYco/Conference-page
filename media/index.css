@@ -236,8 +236,8 @@ main .people .people-cards-container * {
 }
 
 main .people .people-cards-container .people-cards {
-  padding: 25px;
-  max-width: 25%;
+  margin: 2.5%;
+  max-width: 20%;
   height: 25vw;
   -webkit-box-flex: 25%;
       -ms-flex: 25%;
