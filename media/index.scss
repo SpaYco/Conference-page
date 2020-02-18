@@ -1,0 +1,95 @@
+@import "./variables";
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .description {
+        padding: 250px 10vw;
+        text-align: center;
+        width: 100%;
+        h3 {
+            font-family: $primaryFont;
+            font-weight: 100;
+            color: $blackColor;
+            font-size: 25px;
+        }
+        p {
+            font-family: $secondaryFont;
+            font-size: 21px;
+            text-transform: capitalize;
+            padding: 15px 0;
+            .SpaYco {
+                color: $redColor;
+            }
+        }
+    }
+    .events {
+        padding: 150px 10vw;
+        width: 100%;
+        background: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    .event-cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 20vw;
+        width: 25vw;
+        margin: 0 10px;
+        cursor: pointer;
+        img {
+            bottom: 0;
+            top: 0;
+            right: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            filter: blur(0px);
+            position: absolute;
+            z-index: 1;
+            transition: 250ms;
+            object-fit: cover;
+        }
+        h3 {
+            color: white;
+            font-family: $primaryFont;
+            z-index: 2;
+            margin-bottom: 0;
+            font-size: 3vw;
+            transition: 250ms;
+        }
+        .orange, .purple {
+            position: absolute;
+            z-index: 2;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            transition: 250ms;
+        }
+        .orange {
+            background: linear-gradient(0deg, rgba(255,69,0,1) 0%, rgba(255,69,0,0.7203256302521008) 31%, rgba(255, 68, 0, 0) 100%);
+        }
+        .purple {
+            background: linear-gradient(0deg, rgba(255,0,236,1) 0%, rgba(196,0,255,0.7203256302521008) 31%, rgba(119,0,255,0) 100%);
+        }
+        &:hover {
+            .orange, .purple {
+                opacity: 1;
+            }
+            h3 {
+
+            margin-bottom: 25px;
+            }
+            img {
+                filter: blur(2px);
+            }
+        }
+    }
+    }
+}

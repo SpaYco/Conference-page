@@ -27,7 +27,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 55px;
+  padding: 10px 10vw;
 }
 
 header > * {
@@ -55,7 +55,7 @@ header a:hover {
 
 nav {
   background-color: white;
-  padding: 0 55px;
+  padding: 0 10vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,10 +70,44 @@ nav {
 nav a {
   font-size: 25px;
   padding: 0 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-family: "COCOGOOSE", san-serif;
+  color: #272A31;
 }
 
-nav img {
-  max-height: 90px;
+nav a p {
+  padding-left: 5px;
+  -webkit-transition: ease-in-out 900ms;
+  transition: ease-in-out 900ms;
+}
+
+nav a img {
+  max-height: 100px;
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+  -webkit-transition: ease-in-out 1200ms;
+  transition: ease-in-out 1200ms;
+}
+
+nav a:hover img {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+nav a:hover p {
+  padding-left: 10px;
+}
+
+nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 nav .nav-links .nav-about {

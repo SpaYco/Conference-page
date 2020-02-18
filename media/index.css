@@ -1,0 +1,137 @@
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+main .description {
+  padding: 250px 10vw;
+  text-align: center;
+  width: 100%;
+}
+
+main .description h3 {
+  font-family: "COCOGOOSE", san-serif;
+  font-weight: 100;
+  color: #272A31;
+  font-size: 25px;
+}
+
+main .description p {
+  font-family: "Lato", san-serif;
+  font-size: 21px;
+  text-transform: capitalize;
+  padding: 15px 0;
+}
+
+main .description p .SpaYco {
+  color: #EC5242;
+}
+
+main .events {
+  padding: 150px 10vw;
+  width: 100%;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .events .event-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 20vw;
+  width: 25vw;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+main .events .event-cards img {
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  position: absolute;
+  z-index: 1;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .events .event-cards h3 {
+  color: white;
+  font-family: "COCOGOOSE", san-serif;
+  z-index: 2;
+  margin-bottom: 0;
+  font-size: 3vw;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+main .events .event-cards .orange, main .events .event-cards .purple {
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+main .events .event-cards .orange {
+  background: -webkit-gradient(linear, left bottom, left top, from(orangered), color-stop(31%, rgba(255, 69, 0, 0.720326)), to(rgba(255, 68, 0, 0)));
+  background: linear-gradient(0deg, orangered 0%, rgba(255, 69, 0, 0.720326) 31%, rgba(255, 68, 0, 0) 100%);
+}
+
+main .events .event-cards .purple {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff00ec), color-stop(31%, rgba(196, 0, 255, 0.720326)), to(rgba(119, 0, 255, 0)));
+  background: linear-gradient(0deg, #ff00ec 0%, rgba(196, 0, 255, 0.720326) 31%, rgba(119, 0, 255, 0) 100%);
+}
+
+main .events .event-cards:hover .orange, main .events .event-cards:hover .purple {
+  opacity: 1;
+}
+
+main .events .event-cards:hover h3 {
+  margin-bottom: 25px;
+}
+
+main .events .event-cards:hover img {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+/*# sourceMappingURL=index.css.map */
