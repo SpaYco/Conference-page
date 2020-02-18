@@ -38,40 +38,6 @@ main .description p .SpaYco {
   color: #EC5242;
 }
 
-main .title {
-  margin-bottom: 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-main .title h3 {
-  font-family: "COCOGOOSE", san-serif;
-  font-size: 1.5vw;
-}
-
-main .title hr {
-  border: 2px solid #EC5242;
-  border-radius: 5px;
-  width: 3vw;
-  -webkit-transition: ease-out 350ms;
-  transition: ease-out 350ms;
-}
-
-main .title:hover hr {
-  width: 95%;
-}
-
 main .events {
   padding: 150px 10vw;
   width: 100%;

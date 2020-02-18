@@ -25,28 +25,6 @@ main {
             }
         }
     }
-    .title {
-        margin-bottom: 10%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        h3 {
-            font-family: $primaryFont;
-            font-size: 1.5vw;
-        }
-        hr {
-            border: 2px solid $redColor;
-            border-radius: 5px;
-            width: 3vw;
-            transition: ease-out 350ms;
-        }
-        &:hover {
-            hr {
-                width: 95%;
-            }
-        }
-    }
     .events {
         padding: 150px 10vw;
         width: 100%;

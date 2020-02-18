@@ -7,6 +7,30 @@
     text-transform: capitalize;
 }
 body {
+
+    .title {
+        margin-bottom: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h3 {
+            font-family: $primaryFont;
+            font-size: 1.5vw;
+        }
+        hr {
+            margin-top: 10px;
+            border: 2px solid $redColor;
+            border-radius: 5px;
+            width: 3vw;
+            transition: ease-out 350ms;
+        }
+        &:hover {
+            hr {
+                width: 95%;
+            }
+        }
+    }
     background: $grayColor ;
     header {
         background: $blackColor;
