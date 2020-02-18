@@ -8,95 +8,106 @@
 }
 body {
     background: $grayColor ;
-}
-
-header {
-    background: $blackColor;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 10px 10vw;
-    > * {
-        padding: 0 10px;
-    }
-    i {
-        color: $grayColor;
-    }
-    a {
-        color: $grayColor;
-        text-decoration: underline;
-        text-decoration-color: transparent;
-        font-family: $secondaryFont;
-        transition: ease-in-out 0.5s;
-        &:hover {
-            text-decoration-color: $grayColor;
-        }
-    }
-}
-nav {
-    background-color: white;
-    padding: 0 10vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    a {
-        font-size: 25px;
-        padding: 0 25px;
+    header {
+        background: $blackColor;
         display: flex;
+        justify-content: flex-end;
         align-items: center;
-        text-decoration: none;
-        font-family: $primaryFont;
-        color: $blackColor;
-        p {
-            padding-left: 5px;
-            transition: ease-in-out 900ms;
+        padding: 10px 10vw;
+        > * {
+            padding: 0 10px;
         }
-        img {
-        max-height: 100px;
-        transform: rotateX(0deg);
-        transition: ease-in-out 1200ms;
-        }  
-        &:hover {
-            img {
-                transform: rotateX(180deg);
+        i {
+            color: $grayColor;
+        }
+        a {
+            color: $grayColor;
+            text-decoration: underline;
+            text-decoration-color: transparent;
+            font-family: $secondaryFont;
+            transition: ease-in-out 0.5s;
+            &:hover {
+                text-decoration-color: $grayColor;
             }
+        }
+    }
+    nav {
+        background-color: white;
+        padding: 0 10vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a {
+            font-size: 25px;
+            padding: 0 25px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            font-family: $primaryFont;
+            color: $blackColor;
             p {
-                padding-left: 10px;
+                padding-left: 5px;
+                transition: ease-in-out 900ms;
             }
+            img {
+            max-height: 100px;
+            transform: rotateX(0deg);
+            transition: ease-in-out 1200ms;
+            }  
+            &:hover {
+                img {
+                    transform: rotateX(180deg);
+                }
+                p {
+                    padding-left: 10px;
+                }
+            }
+        }
+
+        .nav-links {
+            display: flex;
+            .nav-about {
+                color: $blackColor;
+                font-family: $secondaryFont;
+                text-decoration: underline;
+                text-decoration-color: transparent;
+                font-weight: 400;
+                text-shadow: 0px 0px 15px transparent;
+                transition: ease-in-out 450ms;
+                &:hover {
+                    text-decoration-color: $blackColor;
+                }
+            }
+            .nav-tickets {
+                border: 5px solid $redColor;
+                border-radius: 15px;
+                background-color: transparent;
+                color: $redColor;
+                font-family: $primaryFont;
+                text-decoration: none;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                transition: ease-in-out  0.5s;
+                &:hover {
+                    color: white;
+                    background-color: $redColor;
+                }
+            }
+        }
+    }
+    footer {
+        display: flex;
+        padding: 50px 10vw;
+        align-items: center;
+        justify-content: flex-start;
+        img {
+            max-width: 20%;
+            margin-right: 25px;
+        }
+        p {
+            font-family: $secondaryFont;
         }
     }
     
-    .nav-links {
-        display: flex;
-        .nav-about {
-            color: $blackColor;
-            font-family: $secondaryFont;
-            text-decoration: underline;
-            text-decoration-color: transparent;
-            font-weight: 400;
-            text-shadow: 0px 0px 15px transparent;
-            transition: ease-in-out 450ms;
-            &:hover {
-                text-decoration-color: $blackColor;
-            }
-        }
-        .nav-tickets {
-            border: 5px solid $redColor;
-            border-radius: 15px;
-            background-color: transparent;
-            color: $redColor;
-            font-family: $primaryFont;
-            text-decoration: none;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            transition: ease-in-out  0.5s;
-            &:hover {
-                color: white;
-                background-color: $redColor;
-            }
-        }
-    }
 }
-
-
 

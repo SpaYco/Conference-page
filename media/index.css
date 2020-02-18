@@ -196,7 +196,7 @@ main .events .cards-container .event-cards:hover img {
 main .people {
   padding: 150px 10vw;
   width: 100%;
-  background: white;
+  background: #D3D3D3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,5 +328,9 @@ main .credits .credit-pics img {
   padding: 0 35px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+footer p {
+  color: #272A31;
 }
 /*# sourceMappingURL=index.css.map */

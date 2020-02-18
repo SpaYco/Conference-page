@@ -17,7 +17,7 @@ body {
   background: #D3D3D3;
 }
 
-header {
+body header {
   background: #272A31;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,15 +31,15 @@ header {
   padding: 10px 10vw;
 }
 
-header > * {
+body header > * {
   padding: 0 10px;
 }
 
-header i {
+body header i {
   color: #D3D3D3;
 }
 
-header a {
+body header a {
   color: #D3D3D3;
   text-decoration: underline;
   -webkit-text-decoration-color: transparent;
@@ -49,12 +49,12 @@ header a {
   transition: ease-in-out 0.5s;
 }
 
-header a:hover {
+body header a:hover {
   -webkit-text-decoration-color: #D3D3D3;
           text-decoration-color: #D3D3D3;
 }
 
-nav {
+body nav {
   background-color: white;
   padding: 0 10vw;
   display: -webkit-box;
@@ -68,7 +68,7 @@ nav {
           align-items: center;
 }
 
-nav a {
+body nav a {
   font-size: 25px;
   padding: 0 25px;
   display: -webkit-box;
@@ -82,13 +82,13 @@ nav a {
   color: #272A31;
 }
 
-nav a p {
+body nav a p {
   padding-left: 5px;
   -webkit-transition: ease-in-out 900ms;
   transition: ease-in-out 900ms;
 }
 
-nav a img {
+body nav a img {
   max-height: 100px;
   -webkit-transform: rotateX(0deg);
           transform: rotateX(0deg);
@@ -96,22 +96,22 @@ nav a img {
   transition: ease-in-out 1200ms;
 }
 
-nav a:hover img {
+body nav a:hover img {
   -webkit-transform: rotateX(180deg);
           transform: rotateX(180deg);
 }
 
-nav a:hover p {
+body nav a:hover p {
   padding-left: 10px;
 }
 
-nav .nav-links {
+body nav .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-nav .nav-links .nav-about {
+body nav .nav-links .nav-about {
   color: #272A31;
   font-family: "Lato", san-serif;
   text-decoration: underline;
@@ -123,12 +123,12 @@ nav .nav-links .nav-about {
   transition: ease-in-out 450ms;
 }
 
-nav .nav-links .nav-about:hover {
+body nav .nav-links .nav-about:hover {
   -webkit-text-decoration-color: #272A31;
           text-decoration-color: #272A31;
 }
 
-nav .nav-links .nav-tickets {
+body nav .nav-links .nav-tickets {
   border: 5px solid #EC5242;
   border-radius: 15px;
   background-color: transparent;
@@ -141,8 +141,30 @@ nav .nav-links .nav-tickets {
   transition: ease-in-out  0.5s;
 }
 
-nav .nav-links .nav-tickets:hover {
+body nav .nav-links .nav-tickets:hover {
   color: white;
   background-color: #EC5242;
+}
+
+body footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 10vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+body footer img {
+  max-width: 20%;
+  margin-right: 25px;
+}
+
+body footer p {
+  font-family: "Lato", san-serif;
 }
 /*# sourceMappingURL=main.css.map */

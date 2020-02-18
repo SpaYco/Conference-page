@@ -128,7 +128,7 @@ main {
     .people {
         padding: 150px 10vw;
         width: 100%;
-        background: white;
+        background: $grayColor;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -206,5 +206,10 @@ main {
                 object-fit: contain;
             }
         }
+    }
+}
+footer {
+    p {
+        color: $blackColor;
     }
 }
