@@ -1,15 +1,16 @@
 # Project Name
 
-> Apple.com Clone.
+> Conference Page.
 
 ![screenshot](./demo.jpeg)
 
-This Is Clone of old apple.com website.
+This Is A Conference Page.
 
 ## Built With
 
 - HTML
 - CSS
+- SASS
 
 ## Live Demo
 
@@ -18,9 +19,7 @@ This Is Clone of old apple.com website.
 
 ### Usage
 
-- open index.html file
-
-
+- open index.html/about.html/tickets file
 
 ## Authors
 
@@ -29,6 +28,9 @@ This Is Clone of old apple.com website.
 - Github: [@SpaYco](https://github.com/SpaYco)
 - Twitter: [@iSpaYco](https://twitter.com/iSpaYco)
 - Linkedin: [Aziz Mejri](https://www.linkedin.com/in/spayco/)
+
+## Credits 
+- Core Design By [Cindy Shin in Behance](https://www.behance.net/adagio07) (see [here](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015))
 
 ## 🤝 Contributing
 
