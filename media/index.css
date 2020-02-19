@@ -313,9 +313,6 @@ footer p {
     width: 80vw;
     height: 80vw;
   }
-  main #events .cards-container .event-cards h3 {
-    font-size: 5vw;
-  }
   main #people .people-cards-container .people-cards {
     -webkit-box-flex: 90%;
         -ms-flex: 90%;

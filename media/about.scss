@@ -51,7 +51,7 @@ body {
                 text-transform: none;
             }
 
-            >p {
+            > p {
                 margin-top: 15px;
                 font-size: 24px;
             }
@@ -143,6 +143,38 @@ body {
                         .orange { 
                             background-color: rgb(255, 30, 0);
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 768px){
+    body {
+        main {
+            .about-container {
+                .title {
+                    h1 {
+                        font-size: 24px;
+                    }
+                }
+                p {
+                    font-size: 18px;
+                }
+                .about-text {
+                    width: 90%;
+                }
+            }
+            #past-cons {
+                #past-cards {
+                    flex-direction: column;
+                    a {
+                        width: 80vw;
+                        height: 30vw;
+                    }
+                    img {
+                        max-width: 50%;
                     }
                 }
             }

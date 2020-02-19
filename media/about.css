@@ -186,4 +186,29 @@ body main #past-cons #past-cards a img {
 body main #past-cons #past-cards a:hover .orange {
   background-color: #ff1e00;
 }
+
+@media all and (max-width: 768px) {
+  body main .about-container .title h1 {
+    font-size: 24px;
+  }
+  body main .about-container p {
+    font-size: 18px;
+  }
+  body main .about-container .about-text {
+    width: 90%;
+  }
+  body main #past-cons #past-cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main #past-cons #past-cards a {
+    width: 80vw;
+    height: 30vw;
+  }
+  body main #past-cons #past-cards img {
+    max-width: 50%;
+  }
+}
 /*# sourceMappingURL=about.css.map */
