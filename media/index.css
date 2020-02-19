@@ -39,8 +39,7 @@ main #description p {
   font-size: 21px;
   font-weight: 800;
   padding: 15px 0;
-  color: #272a31;
-  text-shadow: 0 0 2px white;
+  text-shadow: 0 0 24px white;
 }
 
 main #description p .SpaYco {
