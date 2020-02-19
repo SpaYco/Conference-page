@@ -17,6 +17,7 @@ body {
         h3 {
             font-family: $primaryFont;
             font-size: 1.5vw;
+            min-width: 105px;
         }
         hr {
             margin-top: 10px;
@@ -62,16 +63,22 @@ body {
         justify-content: space-between;
         align-items: center;
         box-shadow: 0 4px 25px -2px rgb(85, 85, 85);
+        i {
+            display: none !important;
+        }
         a {
             font-size: 25px;
             padding: 0 25px;
             display: flex;
+            justify-content: center;
             align-items: center;
+            text-align: center;
             text-decoration: none;
             font-family: $primaryFont;
             color: $blackColor;
             p {
                 padding-left: 5px;
+                text-transform: none;
                 transition: ease-in-out 900ms;
             }
             img {
@@ -136,3 +143,42 @@ body {
     
 }
 
+@media all and (max-width: 768px){
+    body {
+        header {
+            display: none;
+        }
+        .title {
+            h3 {
+                font-size: 3vw;
+            }
+        }
+        nav {
+            background: transparent;
+            box-shadow: 0px 0px 0px 0px transparent;
+            padding: 0;
+            i {
+                display: block !important;
+                font-size: 45px;
+                color: $blackColor;
+                margin: 25px;
+                cursor: pointer;
+            }
+            #toggle-btn {
+                transform: rotate(0deg);
+                transition: 0.3s;
+            }
+            .toggle {
+                opacity: 0;
+                transition: 0.3s;
+                margin: 1vw;
+                width: 20vw;
+                font-size: 3vw;
+                padding: 0;
+                img {
+                    display: none;
+                }
+            }
+        }
+    }
+}

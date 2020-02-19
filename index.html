@@ -7,6 +7,7 @@
     <title>SpaY.con - Main Page</title>
     <link rel="stylesheet" href="./media/main.css">
     <link rel="stylesheet" href="./media/index.css">
+    <script src="./media/toggle.js"></script>
 </head>
 
 <body>
@@ -24,14 +25,15 @@
     </header>
     <!-- Navigation Bar -->
     <nav>
+        <i onclick="toggleBtn()" id="toggle-btn" class="fas fa-bars"></i>
         <div>
-            <a href="./index.html"><img src="./media/logo.gif" alt="">
+            <a class="brand toggle" href="./index.html"><img src="./media/logo.gif" alt="">
                 <p>SpaY.con</p>
             </a>
         </div>
         <div class="nav-links">
-            <a class="nav-about" href="./about.html">about</a>
-            <a class="nav-tickets" href="./tickets.html">Tickets</a>
+            <a class="nav-about toggle" href="./about.html">about</a>
+            <a class="nav-tickets toggle" href="./tickets.html">Tickets</a>
         </div>
     </nav>
     <!-- Main Section -->

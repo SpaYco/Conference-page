@@ -37,6 +37,7 @@ body .title {
 body .title h3 {
   font-family: "COCOGOOSE", san-serif;
   font-size: 1.5vw;
+  min-width: 105px;
 }
 
 body .title hr {
@@ -105,15 +106,23 @@ body nav {
           box-shadow: 0 4px 25px -2px #555555;
 }
 
+body nav i {
+  display: none !important;
+}
+
 body nav a {
   font-size: 25px;
   padding: 0 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
   text-decoration: none;
   font-family: "COCOGOOSE", san-serif;
   color: #272A31;
@@ -121,6 +130,7 @@ body nav a {
 
 body nav a p {
   padding-left: 5px;
+  text-transform: none;
   -webkit-transition: ease-in-out 900ms;
   transition: ease-in-out 900ms;
 }
@@ -203,5 +213,45 @@ body footer img {
 
 body footer p {
   font-family: "Lato", san-serif;
+}
+
+@media all and (max-width: 768px) {
+  body header {
+    display: none;
+  }
+  body .title h3 {
+    font-size: 3vw;
+  }
+  body nav {
+    background: transparent;
+    -webkit-box-shadow: 0px 0px 0px 0px transparent;
+            box-shadow: 0px 0px 0px 0px transparent;
+    padding: 0;
+  }
+  body nav i {
+    display: block !important;
+    font-size: 45px;
+    color: #272A31;
+    margin: 25px;
+    cursor: pointer;
+  }
+  body nav #toggle-btn {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  body nav .toggle {
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    margin: 1vw;
+    width: 20vw;
+    font-size: 3vw;
+    padding: 0;
+  }
+  body nav .toggle img {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */

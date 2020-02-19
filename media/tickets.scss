@@ -2,7 +2,7 @@
 
 body {
     #first-step {
-        padding: 150px 10vw;
+        padding: 150px 9vw;
         text-align: center;
         width: 100%;
         display: flex;
@@ -26,11 +26,13 @@ body {
         border: 1px solid $blackColor;
         padding: 10px 20px;
         border-radius: 20px;
+        font-size: 1.5vw;
 
         .orange-text {
             padding-right: 5px;
             color: $redColor;
             text-transform: uppercase;
+            min-width: 105px;
 
             &::before {
                 content: '\2022';
@@ -54,6 +56,7 @@ body {
             justify-content: center;
             align-items: center;
             width: 60vw;
+            min-width: 650px;
             margin-bottom: 75px;
             background-color: white;
             border: 1px solid;
@@ -171,6 +174,7 @@ body {
                     justify-content: center;
                     align-items: center;
                     width: 80vw;
+                    min-width: 700px;
                     margin-top: 15px;
 
                     >p {
@@ -192,6 +196,7 @@ body {
                         width: 100%;
                         user-select: none;
                         font-family: $secondaryFont;
+                        background-color: white;
 
                         label {
                             flex: 1;
@@ -221,7 +226,7 @@ body {
             font-family: $primaryFont;
             font-size: 20px;
             padding: 5px 15px;
-            border: 1px solid $blackColor;
+            border: 1px solid transparent;
             box-shadow: 0px 0px 5px 1px gray;
             cursor: pointer;
             transition: 0.3s;
