@@ -178,7 +178,7 @@ main {
             justify-content: center;
             align-items: center;
             img {
-                max-width: 25%;
+                width: 20vw;
                 max-height: 150px;
                 flex: 25%;
                 padding: 0 35px;
@@ -207,16 +207,24 @@ footer {
         #people {
             .people-cards-container {
                 .people-cards {
-                    flex: 90% ;
-                    max-width: 90% ;
-                    width: 90% ;
-                    height: 600px ;
+                    flex: 95% ;
+                    max-width: 95% ;
+                    width: 95% ;
+                    height: 500px ;
                     img {
-                        height: 95% ;
+                        height: 93% ;
                     }
                     a {
-                        height: 5% ;
+                        height: 7% ;
                     }
+                }
+            }
+        }
+        #credits {
+            .credit-pics {
+                img {
+                    height: 60px;
+                    padding: 0 5px;
                 }
             }
         }

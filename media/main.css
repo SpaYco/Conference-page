@@ -253,5 +253,11 @@ body footer p {
   body nav .toggle img {
     display: none;
   }
+  body footer img {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    max-width: 38%;
+    margin-right: 5px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

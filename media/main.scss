@@ -180,5 +180,13 @@ body {
                 }
             }
         }
+        footer {
+            img {
+                transform: rotate(90deg);
+                max-width: 38%;
+                margin-right: 5px;
+
+            }
+        }
     }
 }
