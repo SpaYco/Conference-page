@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
 @font-face {
   font-family: "COCOGOOSE";
   src: url("//db.onlinewebfonts.com/t/d14035f6b1afeabafbee4abb2ebf0fc6.eot");
@@ -9,12 +10,12 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-transform: capitalize;
 }
 
 body {
-  background: #D3D3D3;
+  background: white;
 }
 
 body .title {
@@ -23,26 +24,26 @@ body .title {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 body .title h3 {
-  font-family: "COCOGOOSE", san-serif;
+  font-family: "COCOGOOSE", sans-serif;
   font-size: 1.5vw;
   min-width: 105px;
 }
 
 body .title hr {
   margin-top: 10px;
-  border: 2px solid #EC5242;
+  border: 2px solid #ec5242;
   border-radius: 5px;
   width: 3vw;
   -webkit-transition: ease-out 350ms;
@@ -53,17 +54,39 @@ body .title:hover hr {
   width: 95%;
 }
 
+body footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 10vw;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+body footer img {
+  max-width: 20%;
+  margin-right: 25px;
+}
+
+body footer p {
+  font-family: "Lato", sans-serif;
+}
+
 body header {
-  background: #272A31;
+  background: #272a31;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 10px 10vw;
 }
 
@@ -72,22 +95,17 @@ body header > * {
 }
 
 body header i {
-  color: #D3D3D3;
+  color: #d3d3d3;
 }
 
 body header a {
-  color: #D3D3D3;
+  color: #d3d3d3;
   text-decoration: underline;
   -webkit-text-decoration-color: transparent;
-          text-decoration-color: transparent;
-  font-family: "Lato", san-serif;
+  text-decoration-color: transparent;
+  font-family: "Lato", sans-serif;
   -webkit-transition: ease-in-out 0.5s;
   transition: ease-in-out 0.5s;
-}
-
-body header a:hover {
-  -webkit-text-decoration-color: #D3D3D3;
-          text-decoration-color: #D3D3D3;
 }
 
 body nav {
@@ -97,13 +115,13 @@ body nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-shadow: 0 4px 25px -2px #555555;
-          box-shadow: 0 4px 25px -2px #555555;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-shadow: 0 4px 25px -2px #555;
+  box-shadow: 0 4px 25px -2px #555;
 }
 
 body nav i {
@@ -117,19 +135,19 @@ body nav a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
   text-decoration: none;
-  font-family: "COCOGOOSE", san-serif;
-  color: #272A31;
+  font-family: "COCOGOOSE", sans-serif;
+  color: #272a31;
 }
 
 body nav a p {
-  padding-left: 5px;
+  padding-left: 10px;
   text-transform: none;
   -webkit-transition: ease-in-out 900ms;
   transition: ease-in-out 900ms;
@@ -138,49 +156,50 @@ body nav a p {
 body nav a img {
   max-height: 100px;
   -webkit-transform: rotateX(0deg);
-          transform: rotateX(0deg);
+  transform: rotateX(0deg);
   -webkit-transition: ease-in-out 1200ms;
   transition: ease-in-out 1200ms;
 }
 
-body nav a:hover img {
+nav a:hover img {
   -webkit-transform: rotateX(180deg);
-          transform: rotateX(180deg);
+  transform: rotateX(180deg);
 }
 
-body nav a:hover p {
-  padding-left: 10px;
+nav a:hover header a:hover {
+  -webkit-text-decoration-color: #d3d3d3;
+  text-decoration-color: #d3d3d3;
 }
 
-body nav .nav-links {
+.nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body nav .nav-links .nav-about {
-  color: #272A31;
-  font-family: "Lato", san-serif;
+.nav-links .nav-about {
+  color: #272a31;
+  font-family: "Lato", sans-serif;
   text-decoration: underline;
   -webkit-text-decoration-color: transparent;
-          text-decoration-color: transparent;
+  text-decoration-color: transparent;
   font-weight: 400;
-  text-shadow: 0px 0px 15px transparent;
+  text-shadow: 0 0 15px transparent;
   -webkit-transition: ease-in-out 450ms;
   transition: ease-in-out 450ms;
 }
 
-body nav .nav-links .nav-about:hover {
-  -webkit-text-decoration-color: #272A31;
-          text-decoration-color: #272A31;
+.nav-links .nav-about:hover {
+  -webkit-text-decoration-color: #272a31;
+  text-decoration-color: #272a31;
 }
 
-body nav .nav-links .nav-tickets {
-  border: 5px solid #EC5242;
+.nav-links .nav-tickets {
+  border: 5px solid #ec5242;
   border-radius: 15px;
   background-color: transparent;
-  color: #EC5242;
-  font-family: "COCOGOOSE", san-serif;
+  color: #ec5242;
+  font-family: "COCOGOOSE", sans-serif;
   text-decoration: none;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -188,59 +207,49 @@ body nav .nav-links .nav-tickets {
   transition: ease-in-out  0.5s;
 }
 
-body nav .nav-links .nav-tickets:hover {
+.nav-links .nav-tickets:hover {
   color: white;
-  background-color: #EC5242;
-}
-
-body footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 50px 10vw;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-body footer img {
-  max-width: 20%;
-  margin-right: 25px;
-}
-
-body footer p {
-  font-family: "Lato", san-serif;
+  background-color: #ec5242;
 }
 
 @media all and (max-width: 768px) {
   body header {
     display: none;
   }
+
   body .title h3 {
     font-size: 5vw !important;
   }
+
+  body footer img {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    max-width: 38%;
+    margin-right: 5px;
+  }
+
   body nav {
     background: transparent;
-    -webkit-box-shadow: 0px 0px 0px 0px transparent;
-            box-shadow: 0px 0px 0px 0px transparent;
+    -webkit-box-shadow: 0 0 0 0 transparent;
+    box-shadow: 0 0 0 0 transparent;
     padding: 0;
   }
+
   body nav i {
     display: block !important;
     font-size: 45px;
-    color: #272A31;
+    color: #272a31;
     margin: 25px;
     cursor: pointer;
   }
+
   body nav #toggle-btn {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
+
   body nav .toggle {
     opacity: 0;
     -webkit-transition: 0.3s;
@@ -250,14 +259,8 @@ body footer p {
     font-size: 3vw;
     padding: 0;
   }
+
   body nav .toggle img {
     display: none;
   }
-  body footer img {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-    max-width: 38%;
-    margin-right: 5px;
-  }
 }
-/*# sourceMappingURL=main.css.map */
