@@ -14,7 +14,7 @@ This Is A Conference Page.
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/Spayco/Apple-Clone/beta/index.html)
+[Live Demo Link](https://raw.githack.com/Spayco/Conference-page/beta/about.html)
 
 
 ### Usage
