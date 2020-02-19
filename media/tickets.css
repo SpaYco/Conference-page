@@ -39,6 +39,10 @@ body .step {
   font-size: 1.5vw;
 }
 
+body .step p {
+  color: #272A31;
+}
+
 body .step .orange-text {
   padding-right: 5px;
   color: #EC5242;
@@ -359,6 +363,12 @@ body footer {
 }
 
 @media all and (max-width: 768px) {
+  body .step {
+    font-size: 2.5vw;
+  }
+  body .step .orange-text {
+    min-width: auto;
+  }
   body main #ticket-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

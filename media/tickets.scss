@@ -27,6 +27,9 @@ body {
         padding: 10px 20px;
         border-radius: 20px;
         font-size: 1.5vw;
+        p {
+            color: $blackColor;
+        }
 
         .orange-text {
             padding-right: 5px;
@@ -252,6 +255,12 @@ body {
 
 @media all and (max-width: 768px) {
     body {
+        .step {
+            font-size: 2.5vw;
+            .orange-text {
+                min-width: auto;
+            }
+        }
         main {
             #ticket-container {
                 flex-direction: row;
