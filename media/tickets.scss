@@ -27,7 +27,7 @@ body {
     border: 1px solid $blackColor;
     padding: 10px 20px;
     border-radius: 20px;
-    font-size: 1.5vw;
+    font-size: 1.4vw;
 
     p {
       color: $blackColor;
@@ -40,7 +40,7 @@ body {
       min-width: 105px;
 
       &::before {
-        content: '\2022';
+        content: '\25C6';
         color: $redColor;
         padding-right: 5px;
       }
@@ -255,7 +255,7 @@ body {
 @media all and (max-width: 768px) {
   body {
     .step {
-      font-size: 2.5vw;
+      font-size: 2vw;
 
       .orange-text {
         min-width: auto;

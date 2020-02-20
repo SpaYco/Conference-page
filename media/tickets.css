@@ -39,7 +39,7 @@ body .step {
   border: 1px solid #272a31;
   padding: 10px 20px;
   border-radius: 20px;
-  font-size: 1.5vw;
+  font-size: 1.4vw;
 }
 
 body .step p {
@@ -54,7 +54,7 @@ body .step .orange-text {
 }
 
 body .step .orange-text::before {
-  content: '\2022';
+  content: '\25C6';
   color: #ec5242;
   padding-right: 5px;
 }
@@ -367,7 +367,7 @@ body footer {
 
 @media all and (max-width: 768px) {
   body .step {
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
 
   body .step .orange-text {

@@ -24,14 +24,27 @@ main #description {
   background-size: 100% auto;
   padding: 250px 10vw;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 100%;
 }
 
 main #description h3 {
-  font-family: "COCOGOOSE", sans-serif;
-  font-weight: 100;
+  font-family: "Lato", sans-serif;
   color: #ec5242;
-  font-size: 25px;
+  font-size: 50px;
+  font-weight: 500;
 }
 
 main #description p {
@@ -39,7 +52,9 @@ main #description p {
   font-size: 21px;
   font-weight: 800;
   padding: 15px 0;
-  text-shadow: 0 0 24px white;
+  color: #272a31;
+  background-color: rgba(255, 255, 255, 0.295);
+  width: 70%;
 }
 
 main #description p .SpaYco {
@@ -167,7 +182,7 @@ main #events .cards-container .event-cards img {
 
 main #events .cards-container .event-cards h3 {
   color: white;
-  font-family: "COCOGOOSE", sans-serif;
+  font-family: "Lato", sans-serif;
   z-index: 2;
   margin-bottom: 0;
   font-size: 2.5vw;

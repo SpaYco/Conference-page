@@ -18,13 +18,17 @@ main {
     background-size: 100% auto;
     padding: 250px 10vw;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
 
     h3 {
-      font-family: $primaryFont;
-      font-weight: 100;
+      font-family: $secondaryFont;
       color: $redColor;
-      font-size: 25px;
+      font-size: 50px;
+      font-weight: 500;
     }
 
     p {
@@ -32,7 +36,9 @@ main {
       font-size: 21px;
       font-weight: 800;
       padding: 15px 0;
-      text-shadow: 0 0 24px white;
+      color: $blackColor;
+      background-color: rgba(255, 255, 255, 0.295);
+      width: 70%;
 
       .SpaYco {
         color: $redColor;
@@ -113,7 +119,7 @@ main {
 
         h3 {
           color: white;
-          font-family: $primaryFont;
+          font-family: $secondaryFont;
           z-index: 2;
           margin-bottom: 0;
           font-size: 2.5vw;
