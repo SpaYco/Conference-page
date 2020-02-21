@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaY.con - Main Page</title>
+    <link rel="stylesheet" href="./media/main.css">
+    <link rel="stylesheet" href="./media/tickets.css">
+    <script src="./media/toggle.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a href="#">
+            <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="#">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#">English</a>
+        <a href="#">My Page</a>
+        <a href="#">Logout</a>
+    </header>
+    <!-- Navigation Bar -->
+    <nav>
+        <i onclick="toggleBtn()" id="toggle-btn" class="fas fa-bars"></i>
+        <div>
+            <a class="brand toggle" href="./index.html"><img src="./media/logo.gif" alt="">
+                <p>SpaY.con</p>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a class="nav-about toggle" href="./about.html">about</a>
+            <a class="nav-tickets toggle" href="./tickets.html">Tickets</a>
+        </div>
+    </nav>
+    <!-- Main Section -->
+    <main>
+        <div id="first-step">
+            <div class="title">
+                <h3>Select Tickets</h3>
+                <hr>
+            </div>
+            <div class="step">
+                <p class="orange-text">Step 1 :</p>
+                <p>Please Select the day you want to join SpaYcon.</p>
+            </div>
+        </div>
+        <form id="ticket-container" action="./buy.php">
+            <div class="row">
+                <div class="first-col">
+                    Ticket
+                </div>
+                <div class="second-col">
+                    1-Day-Ticket
+                </div>
+                <div class="double-col">
+                    2-Day-Ticket
+                </div>
+                <div class="fifth-col">
+                    Affiliate/Partners
+                </div>
+            </div>
+            <div class="row">
+                <div class="first-col">
+                    Date
+                </div>
+                <div class="second-col">
+                    5. April (Fri)
+                </div>
+                <div class="third-col">
+                    6. April (Sat)
+                </div>
+                <div class="fourth-col">
+                    5.-6. April (Fri-Sat)
+                </div>
+                <div class="fifth-col">
+                    5.-6. April (Fri-Sat)
+                </div>
+            </div>
+            <div class="row">
+                <div class="first-col">
+                    Normal
+                </div>
+                <label class="second-col price">
+                    $150 <input type="radio" name="nomral" value="nomral-first" required>
+                </label>
+                <label class="third-col price">
+                    $150 <input type="radio" name="nomral" value="nomral-second" required>
+                </label>
+                <label class="fourth-col price">
+                    $250 <input type="radio" name="nomral" value="nomral-both" required>
+                </label>
+                <label class="fifth-col price">
+                    $0 <input type="radio" name="nomral" value="nomral-special" required>
+                </label>
+            </div>
+            <div class="row">
+                <div class="first-col">
+                    Students
+                </div>
+                <label class="second-col price">
+                    $70 <input type="radio" name="student" value="student-first" required>
+                </label>
+                <label class="third-col price">
+                    $70 <input type="radio" name="student" value="student-second" required>
+                </label>
+                <label class="fourth-col price">
+                    $100 <input type="radio" name="student" value="student-both" required>
+                </label>
+                <label class="fifth-col price">
+                    $0 <input type="radio" name="student" value="student-special" required>
+                </label>
+            </div>
+        </form>
+        <div class="box"><i class="fas fa-chevron-down"></i></div>
+        <div id="menu-section">
+            <div class="step">
+                <p class="orange-text">Step 2 :</p>
+                <p>Please Select Your Registered Day(s) Launch.
+                </p>
+            </div>
+            <form id="menu" action="./buy.php">
+                <div class="menu-container">
+                    <p>April 5th Launch</p>
+                    <div>
+                        <label>
+                            <span> Menu 1</span><input type="radio" name="first-menu" id="first-menu-1" value="first-menu-1"
+                                required>
+                        </label>
+                        <label>
+                            <span> Menu 2</span><input type="radio" name="first-menu" id="first-menu-2" value="first-menu-2"
+                                required>
+                        </label>
+                        <label>
+                            <span> Menu 3</span><input type="radio" name="first-menu" id="first-menu-3" value="first-menu-3"
+                                required>
+                        </label>
+                        <label>
+                            <span> Menu 4</span><input type="radio" name="first-menu" id="first-menu-4" value="first-menu-4"
+                                required>
+                        </label>
+                        <label>
+                            <span> Menu 5</span><input type="radio" name="first-menu" id="first-menu-5" value="first-menu-5"
+                                required>
+                        </label>
+                        <label>
+                            <span> Menu 6</span><input type="radio" name="first-menu" id="first-menu-6" value="first-menu-6"
+                                required>
+                        </label>
+                        <label>
+                            <span> Nothing</span><input type="radio" name="first-menu" id="first-menu-7" value="first-menu-7"
+                                required>
+                        </label>
+                    </div>
+                </div>
+                <div class="menu-container">
+                    <p>April 6th Launch</p>
+                    <div>
+                        <label>
+                            <span> Menu 1</span><input type="radio" name="second-menu" id="second-menu-1"
+                                value="second-menu-1" required>
+                        </label>
+                        <label>
+                            <span> Menu 2</span><input type="radio" name="second-menu" id="second-menu-2"
+                                value="second-menu-2" required>
+                        </label>
+                        <label>
+                            <span> Menu 3</span><input type="radio" name="second-menu" id="second-menu-3"
+                                value="second-menu-3" required>
+                        </label>
+                        <label>
+                            <span> Menu 4</span><input type="radio" name="second-menu" id="second-menu-4"
+                                value="second-menu-4" required>
+                        </label>
+                        <label>
+                            <span> Menu 5</span><input type="radio" name="second-menu" id="second-menu-5"
+                                value="second-menu-5" required>
+                        </label>
+                        <label>
+                            <span> Menu 6</span><input type="radio" name="second-menu" id="second-menu-6"
+                                value="second-menu-6" required>
+                        </label>
+                        <label>
+                            <span> Nothing</span><input type="radio" name="second-menu" id="second-menu-7"
+                                value="second-menu-7" required>
+                        </label>
+                    </div>
+                </div>
+            </form>
+            <button class="button" onclick="buy()">BUY NOW</button>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <img src="./media/SpaY.co.png" alt="">
+        <div>
+            <p>Copyright © 2020 Aziz Mejri, All rights reserved. </p>
+            <br>
+            <p>You may copy the content to individual third parties for their personal use, but only if you acknowledge
+                the website as the source of the material</p>
+        </div>
+    </footer>
+    <!-- FontAwesome script for icons -->
+    <script src="https://kit.fontawesome.com/e966a3bd22.js" crossorigin="anonymous"></script>
+    <!-- Buying Script -->
+    <script>
+        function buy() {
+            document.getElementById("ticket-container").submit();
+            document.getElementById("menu-section").submit();
+        }
+    </script>
+</body>
+
+</html>
