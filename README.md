@@ -4,7 +4,7 @@
 
 ![screenshot](./demo2.jpeg)
 
-This Is A Conference Page.
+This is a conference page.
 
 ## Built With
 
