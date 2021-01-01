@@ -2,7 +2,7 @@
 
 > Conference Page.
 
-![screenshot](./demo2.jpeg)
+![screenshot](./screenshot.png)
 
 This is a conference page.
 
